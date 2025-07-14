@@ -14,7 +14,7 @@ const Index = () => {
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
               <Icon name="Building2" size={32} className="text-slate-700" />
-              <span className="text-2xl font-bold text-slate-800">СтройТехПром</span>
+              <span className="text-2xl font-bold text-slate-800">АурумСтрой</span>
             </div>
             <nav className="hidden md:flex items-center gap-8">
               <a href="#services" className="text-slate-600 hover:text-slate-800 transition-colors">Услуги</a>
@@ -239,7 +239,7 @@ const Index = () => {
             <div>
               <h2 className="text-4xl font-bold text-slate-800 mb-6">О компании</h2>
               <p className="text-lg text-slate-600 mb-6">
-                СтройТехПром — надежный партнер в области промышленного строительства 
+                АурумСтрой — надежный партнер в области промышленного строительства 
                 с многолетним опытом реализации сложных проектов. Мы специализируемся 
                 на монолитных работах, металлоконструкциях и комплексном строительстве 
                 промышленных объектов.
@@ -335,7 +335,7 @@ const Index = () => {
                   <div className="flex items-center gap-4">
                     <Icon name="Mail" size={24} className="text-slate-600" />
                     <div>
-                      <p className="font-semibold text-slate-800">info@stroytech.ru</p>
+                      <p className="font-semibold text-slate-800">info@aurumstroy.ru</p>
                       <p className="text-slate-600">Электронная почта</p>
                     </div>
                   </div>
@@ -381,7 +381,7 @@ const Index = () => {
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <Icon name="Building2" size={24} />
-                <span className="text-xl font-bold">СтройТехПром</span>
+                <span className="text-xl font-bold">АурумСтрой</span>
               </div>
               <p className="text-slate-400">
                 Профессиональное строительство промышленных объектов
@@ -409,13 +409,13 @@ const Index = () => {
               <h4 className="font-semibold mb-4">Контакты</h4>
               <div className="space-y-2 text-slate-400">
                 <p>+7 (495) 123-45-67</p>
-                <p>info@stroytech.ru</p>
+                <p>info@aurumstroy.ru</p>
                 <p>Москва, ул. Строителей, 15</p>
               </div>
             </div>
           </div>
           <div className="border-t border-slate-800 mt-8 pt-8 text-center text-slate-400">
-            <p>&copy; 2024 СтройТехПром. Все права защищены.</p>
+            <p>&copy; 2024 АурумСтрой. Все права защищены.</p>
           </div>
         </div>
       </footer>
