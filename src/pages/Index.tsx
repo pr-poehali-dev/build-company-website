@@ -63,7 +63,7 @@ const Index = () => {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-20 bg-gray-50">
+      <section id="services" className="py-20 bg-gradient-to-br from-slate-50 via-blue-50 to-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-slate-800 mb-4">Наши услуги</h2>
@@ -177,29 +177,70 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
-              <CardHeader>
-                <Icon name="Square" size={48} className="text-slate-700 mb-4" />
-                <CardTitle className="text-slate-800">Промышленные полы</CardTitle>
-                <CardDescription>
-                  Устройство высокопрочных полов для промышленных объектов
+            <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-gray-50 opacity-50"></div>
+              <CardHeader className="relative z-10">
+                <div className="w-full h-48 mb-4 rounded-lg overflow-hidden">
+                  <img 
+                    src="https://cdn.poehali.dev/files/e288e421-a399-4d87-92e9-25c79db98fd0.jpeg" 
+                    alt="Технология устройства промышленных полов" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <CardTitle className="text-slate-800 text-xl">Промышленные полы</CardTitle>
+                <CardDescription className="text-slate-600">
+                  Полный цикл устройства высокопрочных полов с применением современных технологий
                 </CardDescription>
               </CardHeader>
-              <CardContent>
-                <ul className="space-y-2 text-slate-600">
-                  <li className="flex items-center gap-2">
-                    <Icon name="Check" size={16} className="text-green-600" />
-                    Полы с топпингом
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Icon name="Check" size={16} className="text-green-600" />
-                    Наливные полы
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Icon name="Check" size={16} className="text-green-600" />
-                    Полимерные покрытия
-                  </li>
-                </ul>
+              <CardContent className="relative z-10">
+                <div className="space-y-3 mb-4">
+                  <div className="flex items-center gap-3 p-2 bg-blue-50 rounded-lg">
+                    <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-semibold text-sm">1</div>
+                    <span className="text-slate-700 font-medium">Устройство гидроизоляции</span>
+                  </div>
+                  <div className="flex items-center gap-3 p-2 bg-blue-50 rounded-lg">
+                    <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-semibold text-sm">2</div>
+                    <span className="text-slate-700 font-medium">Устройство арматурного каркаса</span>
+                  </div>
+                  <div className="flex items-center gap-3 p-2 bg-blue-50 rounded-lg">
+                    <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-semibold text-sm">3</div>
+                    <span className="text-slate-700 font-medium">Приемка бетона</span>
+                  </div>
+                  <div className="flex items-center gap-3 p-2 bg-blue-50 rounded-lg">
+                    <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-semibold text-sm">4</div>
+                    <span className="text-slate-700 font-medium">Выравнивание лазерным нивелиром</span>
+                  </div>
+                  <div className="flex items-center gap-3 p-2 bg-blue-50 rounded-lg">
+                    <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-semibold text-sm">5</div>
+                    <span className="text-slate-700 font-medium">Рассыпание топпинга</span>
+                  </div>
+                  <div className="flex items-center gap-3 p-2 bg-blue-50 rounded-lg">
+                    <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-semibold text-sm">6</div>
+                    <span className="text-slate-700 font-medium">Обработка бетонозаглаживающими машинами</span>
+                  </div>
+                  <div className="flex items-center gap-3 p-2 bg-blue-50 rounded-lg">
+                    <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-semibold text-sm">7</div>
+                    <span className="text-slate-700 font-medium">Обработка поверхности пропиткой</span>
+                  </div>
+                  <div className="flex items-center gap-3 p-2 bg-blue-50 rounded-lg">
+                    <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-semibold text-sm">8</div>
+                    <span className="text-slate-700 font-medium">Нарезка швов</span>
+                  </div>
+                </div>
+                <div className="grid grid-cols-3 gap-2 text-center mt-4">
+                  <div className="p-2 bg-slate-50 rounded">
+                    <div className="text-sm text-slate-600">Толщина</div>
+                    <div className="font-semibold text-slate-800">80-200мм</div>
+                  </div>
+                  <div className="p-2 bg-slate-50 rounded">
+                    <div className="text-sm text-slate-600">Нагрузка</div>
+                    <div className="font-semibold text-slate-800">до 10т/м²</div>
+                  </div>
+                  <div className="p-2 bg-slate-50 rounded">
+                    <div className="text-sm text-slate-600">Срок</div>
+                    <div className="font-semibold text-slate-800">7-14 дней</div>
+                  </div>
+                </div>
               </CardContent>
             </Card>
 
